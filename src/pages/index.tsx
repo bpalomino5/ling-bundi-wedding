@@ -1,7 +1,12 @@
-import headerDictionary from '@/dictionary/header'
-import dictionary from '@/dictionary/home'
+import {useState} from 'react'
+
+import useDictionary from '@/hooks/use-dictionary';
 
 export default function Home() {
+  const [locale, setLocale] = useState('en-US');
+
+  const { headerDictionary, homeDictionary: dictionary } = useDictionary(locale);
+
   return (
     <div>
         <div className='dropdown dropdown-hover not-prose fixed top-5 right-5 z-[1]'>
@@ -11,8 +16,8 @@ export default function Home() {
           </svg>
           </label>
           <ul tabIndex={0} className='p-2 shadow dropdown-content z-[1] menu bg-base-100 rounded-box w-auto'>
-            <li><a className="tooltip tooltip-left" data-tip="English">🇺🇸</a></li>
-            <li><a className="tooltip tooltip-left" data-tip="Español">🇵🇪</a></li>
+            <li><a className="tooltip tooltip-left" data-tip="English" onClick={() => setLocale('en-US')}>🇺🇸</a></li>
+            <li><a className="tooltip tooltip-left" data-tip="Español" onClick={() => setLocale('es-PE')}>🇵🇪</a></li>
           </ul>
         </div>
 
