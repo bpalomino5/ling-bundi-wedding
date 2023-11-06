@@ -1,25 +1,36 @@
+import headerDictionary from '@/dictionary/header'
 import dictionary from '@/dictionary/home'
 
 export default function Home() {
   return (
     <div>
-      <header className='prose'>
-        <h1>{dictionary['page-heading']}</h1>
+      <header className='prose max-w-none text-center mb-6 p-10'>
+        <h1>{headerDictionary['page-heading']}</h1>
+
+        <nav className='flex justify-center'>
+          <a className='link mx-2'>{headerDictionary['home']}</a>
+          <a className='link mx-2'>{headerDictionary['schedule']}</a>
+          <a className='link mx-2'>{headerDictionary['travel']}</a>
+          <a className='link mx-2'>{headerDictionary['registry']}</a>
+          <a className='link mx-2'>{headerDictionary['gallery']}</a>
+          <a className='link mx-2'>{headerDictionary['things-to-do']}</a>
+          <a className='link mx-2'>{headerDictionary['faqs']}</a>
+        </nav>
       </header>
-      <nav className="flex justify-between">
-        <a className="link">Home</a>
-        <a className="link">Schedule</a>
-        <a className="link">Travel</a>
-        <a className="link">Registry</a>
-        <a className="link">Gallery</a>
-        <a className="link">Things To Do</a>
-        <a className="link">FAQs</a>
-      </nav>
-      <main className='prose'>
-        <div>
-          <h2>{dictionary['brandon']}</h2>
-          <h2>{dictionary['and']}</h2>
-          <h2>{dictionary['elaine']}</h2>
+
+      <div className='flex align-center justify-center text-center min-h-[600px] relative overflow-hidden not-prose'>
+        <img
+          className='object-cover object-center w-full h-full absolute'
+          src='https://images.zola.com/dc9ca42b-c7ed-4aef-894f-89ce403e03cb?w=3000'
+          alt='brandon-and-elaine'
+        />
+      </div>
+
+      <main className='prose max-w-none text-center px-60'>
+        <div className="py-20">
+          <h2 className='m-0 uppercase text-6xl'>{dictionary['brandon']}</h2>
+          <p className='my-10'>{dictionary['and']}</p>
+          <h2 className='m-0 uppercase text-6xl'>{dictionary['elaine']}</h2>
         </div>
 
         <div>
@@ -39,7 +50,7 @@ export default function Home() {
           ))}
         </div>
       </main>
-      <footer className="prose">
+      <footer className='prose max-w-none text-center mt-60 mb-20'>
         <h2>Bundi Technologies</h2>
       </footer>
     </div>
