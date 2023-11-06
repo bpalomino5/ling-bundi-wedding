@@ -17,7 +17,8 @@ const config: Config = {
         DEFAULT: {
           css: {
             h3: {
-              fontSize: '40px'
+              'margin-top': '0',
+              'font-size': '40px'
             }
           }
         }
