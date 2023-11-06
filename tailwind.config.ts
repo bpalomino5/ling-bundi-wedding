@@ -16,6 +16,12 @@ const config: Config = {
       typography: {
         DEFAULT: {
           css: {
+            hr: {
+              margin: 0
+            },
+            h2: {
+              margin: 0
+            },
             h3: {
               'margin-top': '0',
               'font-size': '40px'
