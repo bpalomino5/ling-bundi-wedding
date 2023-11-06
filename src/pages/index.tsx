@@ -1,10 +1,11 @@
+// Libraries
 import {useState} from 'react'
-
+import Image from 'next/image'
+// Hooks
 import useDictionary from '@/hooks/use-dictionary';
 
 export default function Home() {
   const [locale, setLocale] = useState('en-US');
-
   const { headerDictionary, homeDictionary: dictionary } = useDictionary(locale);
 
   return (
