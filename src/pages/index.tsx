@@ -50,10 +50,10 @@ export default function Home() {
         </ul>
       </div>
 
-      <header className='prose max-w-none text-center mb-6 p-10'>
+      <header className='prose max-w-none text-center p-10'>
         <h1>{headerDictionary['page-heading']}</h1>
 
-        <nav className='flex justify-center'>
+        <nav className='flex flex-col justify-center md:flex-row'>
           <a className='link mx-2'>{headerDictionary['home']}</a>
           <a className='link mx-2'>{headerDictionary['schedule']}</a>
           <a className='link mx-2'>{headerDictionary['travel']}</a>
@@ -64,7 +64,7 @@ export default function Home() {
         </nav>
       </header>
 
-      <div className='flex align-center justify-center text-center min-h-[600px] relative overflow-hidden not-prose'>
+      <div className='flex align-center justify-center text-center min-h-[320px] md:min-h-[600px] relative overflow-hidden not-prose'>
         <img
           className='object-cover object-center w-full h-full absolute'
           src='https://images.zola.com/dc9ca42b-c7ed-4aef-894f-89ce403e03cb?w=3000'
@@ -72,15 +72,15 @@ export default function Home() {
         />
       </div>
 
-      <main className='prose max-w-none text-center px-60 pt-20 pb-60'>
+      <main className='prose max-w-none text-center px-10 pt-10 pb-20 md:px-60 md:pt-20 md:pb-60'>
         <div className='flex flex-row items-center justify-center relative pb-20'>
-          <div className="bg-[url('https://images.zola.com/81efdc62-6bba-4b20-a923-c443fb467708?w=500')] bg-contain bg-no-repeat bg-center h-[415px] w-[178px] block shrink" />
+          <div className="hidden md:block bg-[url('https://images.zola.com/81efdc62-6bba-4b20-a923-c443fb467708?w=500')] bg-contain bg-no-repeat bg-center h-[415px] w-[178px] block shrink" />
           <div className='flex-1 flex flex-col justify-center'>
             <h2 className='m-0 uppercase text-6xl'>{dictionary['brandon']}</h2>
             <p className='my-10'>{dictionary['and']}</p>
             <h2 className='m-0 uppercase text-6xl'>{dictionary['elaine']}</h2>
           </div>
-          <div className='bg-[url("https://images.zola.com/6061366f-10a7-43f8-8b92-3b15cca74567?w=500")] bg-contain bg-no-repeat bg-center h-[415px] w-[178px] block shrink' />
+          <div className='hidden md:block bg-[url("https://images.zola.com/6061366f-10a7-43f8-8b92-3b15cca74567?w=500")] bg-contain bg-no-repeat bg-center h-[415px] w-[178px] block shrink' />
         </div>
 
         <div>
@@ -103,9 +103,10 @@ export default function Home() {
           ))}
         </div>
       </main>
+
       <footer className='prose max-w-none text-center'>
-        <hr className="mx-60"/>
-        <div className='p-20'>
+        <hr className="mx-10 md:mx-60"/>
+        <div className='p-10 md:p-20'>
           <h2>Bundi Technologies</h2>
         </div>
       </footer>
