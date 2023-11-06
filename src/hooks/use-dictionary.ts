@@ -1,5 +1,6 @@
 import enUSDictionaries from '@/dictionary/en-us'
 import esPEDictionaries from '@/dictionary/es-pe'
+import zhCNDictionaries from '@/dictionary/zh-cn'
 
 const useDictionary = (locale: string) => {
   switch(locale) {
@@ -7,6 +8,8 @@ const useDictionary = (locale: string) => {
       return enUSDictionaries;
     case 'es-PE':
       return esPEDictionaries;
+    case 'zh-CN':
+      return zhCNDictionaries;
     default:
       return enUSDictionaries;
   }

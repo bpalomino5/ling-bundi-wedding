@@ -3,7 +3,7 @@ const dictionary = {
   brandon: 'Brandon',
   elaine: 'Elaine',
   and: 'y',
-  'wedding-date': '27 de Abril, 2024',
+  'wedding-date': '27 de Abril de 2024',
   'wedding-city': 'Los Angeles, CA, USA',
   'how-we-met-heading': 'CÓMO NOS CONOCIMOS',
   'how-we-met-description':

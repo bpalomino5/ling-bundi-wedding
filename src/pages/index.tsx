@@ -18,6 +18,7 @@ export default function Home() {
           <ul tabIndex={0} className='p-2 shadow dropdown-content z-[1] menu bg-base-100 rounded-box w-auto'>
             <li><a className="tooltip tooltip-left" data-tip="English" onClick={() => setLocale('en-US')}>🇺🇸</a></li>
             <li><a className="tooltip tooltip-left" data-tip="Español" onClick={() => setLocale('es-PE')}>🇵🇪</a></li>
+            <li><a className="tooltip tooltip-left" data-tip="中文" onClick={() => setLocale('zh-CN')}>🇨🇳</a></li>
           </ul>
         </div>
 
